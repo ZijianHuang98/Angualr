@@ -1,0 +1,13 @@
+<p>feb22 works!</p>
+<hr>
+<h1>to do list</h1>
+<input [(ngModel)]="user" placeholder="please enter">
+<button (click)="doAdd()">add</button>
+<p *ngIf="toDoList.length==0">nothing to do</p>
+<ul>
+    <li *ngFor="let item of toDoList;let i = index;">
+        {{item}}
+        <button (click)="doDelete(i)">delete</button>
+    </li>
+    
+</ul>

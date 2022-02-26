@@ -1,0 +1,7 @@
+<p>feb21 works!</p>
+<div [ngSwitch]="userLevel">
+    <p *ngSwitchCase="'normal'">普通用户</p>
+    <div *ngSwitchCase="'vip'">VIP</div>
+    <h2 *ngSwitchCase="'svip'">svip</h2>
+    <span *ngSwitchDefault>just look around</span>
+</div>

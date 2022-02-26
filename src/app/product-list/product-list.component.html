@@ -1,0 +1,21 @@
+<h1>product-list works!</h1>
+<h3>employee List</h3>
+<table border="1" width="100%">
+    <tbody>
+        <tr *ngIf="eList.length == 0">
+            <td colspan="6">No more</td>
+        </tr>
+        <tr *ngFor="let e of eList;index as i">
+            <td>{{e.eid}}</td>
+            <td>{{e.ename}}</td>
+            <td>{{e.wage | sexFilter}}</td>
+            <td>{{e.sex}}</td>
+            <td>{{e.age}}</td>
+            <td>
+                <button (click)="doDelete(i)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<h1>fillter</h1>
