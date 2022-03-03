@@ -1,9 +1,9 @@
 import { Pipe } from "@angular/core";
 
 @Pipe({
-    name:'sexFilter'
+    name:'sex'
 })
-export class sexFilter{ 
+export class sexFilter{    
     transform(val){
         if(val < 50000)
         return 'rich'

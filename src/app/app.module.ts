@@ -8,6 +8,7 @@ import { Feb21Component } from './feb21/feb21.component';
 import { Feb22Component } from './feb22/feb22.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { sexFilter } from './product-list/sexFilter';
+import { DependancyComponent } from './dependancy/dependancy.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { sexFilter } from './product-list/sexFilter';
     Feb21Component,
     Feb22Component,
     ProductListComponent,    
-    sexFilter
+    sexFilter, DependancyComponent
   ],
   imports: [
     BrowserModule,
