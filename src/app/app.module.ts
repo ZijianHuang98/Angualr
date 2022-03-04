@@ -9,6 +9,8 @@ import { Feb22Component } from './feb22/feb22.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { sexFilter } from './product-list/sexFilter';
 import { DependancyComponent } from './dependancy/dependancy.component';
+import{HttpClientModule} from '@angular/common/http';
+import { UserComponent } from './user/user.component'
 
 @NgModule({
   declarations: [
@@ -16,12 +18,15 @@ import { DependancyComponent } from './dependancy/dependancy.component';
     Feb21Component,
     Feb22Component,
     ProductListComponent,    
-    sexFilter, DependancyComponent
+    sexFilter,
+    DependancyComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

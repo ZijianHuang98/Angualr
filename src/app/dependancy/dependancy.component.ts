@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { LogService } from '../log.service';
 
@@ -8,7 +9,9 @@ import { LogService } from '../log.service';
 })
 export class DependancyComponent implements OnInit {
   log = null
-  constructor(abc: LogService) {
+  http = null
+  constructor(abc: LogService, http:HttpClientModule) {
+    this.http = http
     this.log = abc
    }
   doAdd(){
@@ -28,6 +31,15 @@ doDelete(){
   // let time = new Date().getTime()
   // let action = 'delete some thing '
   // console.log(`admin: ${uname} ${time} ${action}`)
+}
+loadProduct(){
+  let url = 'https://leetcode.com/problemset/all/'
+  this.http.get(url).subscribe((res)=>{
+    console.log('asyn scbscribe')
+    console.log(res)
+
+  })
+
 }
   ngOnInit(): void {
   }
