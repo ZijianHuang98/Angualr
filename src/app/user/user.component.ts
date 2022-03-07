@@ -7,6 +7,7 @@ import { TimeCountingService } from '../time-counting.service';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
+  demo = 1;
   timer:TimeCountingService = null
   constructor(timer: TimeCountingService) {
     this.timer = timer

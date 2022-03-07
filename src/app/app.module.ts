@@ -10,7 +10,8 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { sexFilter } from './product-list/sexFilter';
 import { DependancyComponent } from './dependancy/dependancy.component';
 import{HttpClientModule} from '@angular/common/http';
-import { UserComponent } from './user/user.component'
+import { UserComponent } from './user/user.component';
+import { HttpComponent } from './http/http.component'
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { UserComponent } from './user/user.component'
     sexFilter,
     DependancyComponent,
     UserComponent,
+    HttpComponent,
   ],
   imports: [
     BrowserModule,
