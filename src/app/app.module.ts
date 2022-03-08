@@ -11,7 +11,10 @@ import { sexFilter } from './product-list/sexFilter';
 import { DependancyComponent } from './dependancy/dependancy.component';
 import{HttpClientModule} from '@angular/common/http';
 import { UserComponent } from './user/user.component';
-import { HttpComponent } from './http/http.component'
+import { HttpComponent } from './http/http.component';
+import { ParentBlogComponent } from './parent-blog/parent-blog.component';
+import { ChildModtifyComponent } from './child-modtify/child-modtify.component';
+import { ChildPictureComponent } from './child-picture/child-picture.component'
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { HttpComponent } from './http/http.component'
     DependancyComponent,
     UserComponent,
     HttpComponent,
+    ParentBlogComponent,
+    ChildModtifyComponent,
+    ChildPictureComponent,
   ],
   imports: [
     BrowserModule,
