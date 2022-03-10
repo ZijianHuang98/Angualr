@@ -1,6 +1,5 @@
-<div style = " background-color: chocolate;">
-<h1>Zijian Huang</h1>
-<app-child-modtify></app-child-modtify>
-<br/>
-<app-child-picture></app-child-picture>
+<div style = " background-color: chocolate; padding: 20px;">
+<h1>{{userName}}'s Bolg</h1>
+<app-child-modtify (launch)="doChange($event)"></app-child-modtify>
+<app-child-picture [childName] = "userName" ></app-child-picture>
 </div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {FormsModule} from '@angular/forms'
 
 @Component({
   selector: 'app-child-modtify',
@@ -7,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildModtifyComponent implements OnInit {
 
-  constructor() { }
 
+  inputName:string = null
+  @Output()
+  launch = new EventEmitter()
+  constructor() { }
+  getModify(){
+    console.log(this.inputName)
+    this.launch.emit(this.inputName)
+
+  }
   ngOnInit(): void {
   }
 

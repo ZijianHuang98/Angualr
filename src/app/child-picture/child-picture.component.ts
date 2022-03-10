@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-child-picture',
@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ChildPictureComponent implements OnInit {
 
   constructor() { }
+
+  @Input()
+  childName:string = ''
 
   ngOnInit(): void {
   }
