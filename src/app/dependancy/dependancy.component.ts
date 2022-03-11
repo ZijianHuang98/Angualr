@@ -36,7 +36,7 @@ loadProduct(){
   let url = 'https://leetcode.com/problemset/all/'
   this.http.get(url).subscribe((res)=>{
     console.log('asyn scbscribe')
-    console.log(res)
+    console.log(res.data)
 
   })
 
